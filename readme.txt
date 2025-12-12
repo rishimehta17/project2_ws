@@ -16,6 +16,7 @@ rosdep update
 rosdep install --from-paths src --ignore-src -r -y
 
 pip3 install ikpy
+pip install --upgrade websockets
 pip3 install websockets ikpy matplotlib scipy numpy
 ###Now build the ros2_package:
 colcon build --symlink-install
